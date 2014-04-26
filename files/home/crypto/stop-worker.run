@@ -1,0 +1,5 @@
+#!/bin/bash
+killall -9 run-miner
+unlink /home/crypto/start 2>/dev/null
+rm -f /home/crypto/*.bin
+homesync

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=gnome-panel-launcher
+Name[en_US]=my IP
+Comment[en_US]=show my IP
+Exec=bash /home/crypto/show-ip.run
+Name=my IP
+Comment=show my IP
+Icon=gnome-panel-launcher

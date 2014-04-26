@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gedit ~/.sgminer/sgminer.conf || nano ~/.sgminer/sgminer.conf
+homesync
+

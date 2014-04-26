@@ -1,0 +1,4 @@
+#!/bin/bash
+homesync
+spoolsync
+sudo reboot

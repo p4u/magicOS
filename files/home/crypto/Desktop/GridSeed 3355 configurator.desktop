@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=gdu-category-peripheral
+Exec=/home/crypto/gc3355-config.run
+Name[en_US]=GridSeed 3355 configurator
+Comment[en_US]=GridSeed 3355 configurator
+Name=GridSeed 3355 configurator
+Comment=GridSeed 3355 configurator
+Icon=gdu-category-peripheral

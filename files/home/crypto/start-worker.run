@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Starting miner..."
+ln -s /home/crypto/start-worker.run /home/crypto/start 2>/dev/null
+(xterm -e "screen -S gpu -m run-miner $(cat /home/crypto/.sgminer_cmd)") &
+homesync

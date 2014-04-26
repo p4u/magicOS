@@ -1,0 +1,74 @@
+#! /bin/sh
+#
+### BEGIN INIT INFO
+# Provides:          magicpool
+# Default-Start:     2 3
+# Default-Stop:      0 6
+# Short-Description: Readonly system
+# Description:       Mount and prepares the readonly system
+### END INIT INFO
+#
+
+NAME="rosys"
+DESC="rosys"
+CONF="/etc/rosys.conf"
+RO="/rom"
+
+start() {
+	echo "Starting readonly system"
+	bash /etc/rosys.start
+	tmem=$(cat /proc/meminfo | grep ^MemTotal | cut -d: -f2 | tr -d A-z" ")
+	mem=$(($tmem/2))
+	mem=${mem:-500000}
+	for d in $(cat /etc/rosys.conf)
+		do
+		dir="$(echo $d | cut -d: -f1)"
+		copy=$(echo $d | grep : -c)
+		echo "Mounting $dir in ram"
+		mount -t tmpfs none $dir -o size=${mem}K
+		[ $? -eq 0 ] && [ $copy -eq 1 ] && {
+			echo "Copying files for $dir..."
+			cp -a ${RO}$dir/. $dir/
+		}
+	done
+	bash /etc/rosys.end
+}
+
+stop() 	{
+	for d in $(cat /etc/rosys.conf)
+		do
+		dir="$(echo $d | cut -d: -f1)"
+		echo "Umounting $dir in ram"
+		umount $dir
+	done
+#	mount /rom -o remount,rw
+}
+reload() {
+	true
+}
+restart() {
+  stop
+  sleep 0.5
+  start
+}
+
+case "$1" in
+  start)
+    start
+  ;;
+  stop)
+    stop
+  ;;
+  reload|force-reload)
+    reload
+  ;;
+  restart)
+    restart
+  ;;
+  *)
+    echo "Usage: /etc/init.d/$NAME {start|stop|reload|restart|force-reload}"
+    exit 1
+  ;;
+esac
+
+exit 0

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=sgminer
+GenericName=sgminer editor
+Comment=Edit sgminer configuration
+Keywords=Plaintext;Write;
+Exec=sh /home/crypto/Desktop/sgminer-conf.run
+Terminal=true
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+Icon=accessories-text-editor
+Categories=GNOME;GTK;Utility;TextEditor;

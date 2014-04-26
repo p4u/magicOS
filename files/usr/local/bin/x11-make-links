@@ -1,0 +1,1 @@
+for f in $(ls *.c*); do ln -s $f $(echo $f | sed s/-x11//g); done

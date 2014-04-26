@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir -p /var/log/nginx
+fsck.ext4 -fp /dev/disk/by-uuid/00000000-0000-0000-0000-000000000069

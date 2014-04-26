@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=ibus-setup
+Exec=/home/crypto/sgminer-edit.run
+Name[en_US]=sgminer editor
+Comment[en_US]=sgminer conf editor
+Name=sgminer editor
+Comment=sgminer conf editor
+Icon=ibus-setup

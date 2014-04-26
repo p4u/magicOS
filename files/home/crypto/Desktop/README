@@ -1,0 +1,25 @@
+This operating system is designed by magicpool.org folks. All contents are distributed under GPLv3 free licence.
+
+There are a set of icons in your Desktop. 
+
+The first time you boot your miner, open "sgminer configurator". It is a wizard where you will select and configure your worker.
+
+Afterwards you can use "sgminer editor" to tune the sgminer config file.
+
+If you are mining in magicpool.org, execute "magicpool agent" and set your username/worker_alias.
+
+For start mining click the icon "start", once it is done your worker will automatically start in each boot.
+
+You can acces to your worker remotelly via "ssh":
+  ssh crypto@my_worker_ip
+  screen -x
+  (type CTRL+A+D to exit)
+  (the password is "magicpool")
+
+If you don't have VGA/keyboard/mouse access, you can configure your miner from ssh too:
+	Connect to it and execute "./sgminer-conf.run". Follow the wizard and when finish reboot the computer (ignore any error during configuration process).
+	You can always customize your sgminer.conf executing "nano /home/crypto/.sgminer/sgminer.conf" and execute "homesync" to make the changes permanent.
+	To reload the sgminer configuration, just attach to the screen and press key "q".
+
+Note: GridSeed 3355 has not been deeply tested, please report any issue to admin@magicpool.org
+

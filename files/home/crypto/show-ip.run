@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "-------------------"
+ip r get 8.8.8.8 | grep src | awk '{print $7}'
+echo "-------------------"
+read a

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=gdu-smart-healthy
+Name[en_US]=gpu start
+Exec=/home/crypto/start-worker.run
+Comment[en_US]=start worker
+Name=start
+Comment=start worker
+Icon=gdu-smart-healthy

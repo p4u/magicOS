@@ -1,0 +1,36 @@
+#!/bin/bash
+configs="/home/crypto/configs"
+sgminerc="/home/crypto/.sgminer/sgminer.conf"
+sgminer_cmd="/home/crypto/.sgminer_cmd"
+list="$configs/list"
+
+[ ! -f "$list" ] && echo "List file does not exist in $list" && exit 1
+
+echo "Select the protocol you want to mine"
+select proto in scrypt scrypt-n x11
+do
+	[ "$proto" == "scrypt" -o "$proto" == "scrypt-n" ] && cmd="sgminer"
+	[ "$proto" == "x11" ] && cmd="sgminer-x11"
+	echo "$cmd" > $sgminer_cmd
+	break
+done
+
+echo "Select your GPU type"
+select conf in $(cat $list | cut -d: -f2) "keep current one"
+	do break; done
+
+[ "$conf" != "keep current one" ] && {
+	file="$(cat $list | grep $conf | cut -d: -f1).$proto"
+	cp -f $configs/$file $configs/sgminer.active.conf
+	echo "Using $file"
+	unlink $sgminerc || rm -f $sgminerc
+	ln -s $configs/sgminer.active.conf $sgminerc
+}
+
+clear
+echo -e "\nReview the details of the sgminer config file and\nCLOSE DE EDITOR TO START MINING"
+gedit $configs/sgminer.active.conf || nano $configs/sgminer.active.conf
+homesync
+
+killall run-miner 2>/dev/null
+/home/crypto/start-worker.run

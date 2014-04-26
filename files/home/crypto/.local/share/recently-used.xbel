@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///usr/share/icons/hicolor/scalable/apps/gnome-nettool.svg" added="2014-04-02T20:46:06Z" modified="2014-04-03T20:34:27Z" visited="2014-04-02T20:46:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-03T20:33:45Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2014-04-03T20:34:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Desktop/sgminer-conf.run" added="2014-04-02T20:46:25Z" modified="2014-04-02T20:46:25Z" visited="2014-04-02T20:46:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-02T20:46:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/.sgminer/sgminer.conf" added="2014-04-02T20:47:51Z" modified="2014-04-04T12:02:18Z" visited="2014-04-02T20:47:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-04T12:02:18Z" count="39"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/icons/hicolor/scalable/apps/gwibber.svg" added="2014-04-02T21:12:07Z" modified="2014-04-02T21:12:52Z" visited="2014-04-02T21:12:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-02T21:12:07Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2014-04-02T21:12:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/icons/hicolor/scalable/apps/gdu-unmountable.svg" added="2014-04-03T19:46:09Z" modified="2014-04-03T19:46:09Z" visited="2014-04-03T19:46:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-03T19:46:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Desktop/reboot" added="2014-04-03T19:46:57Z" modified="2014-04-03T19:47:24Z" visited="2014-04-03T19:46:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-03T19:47:24Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/sgminer-edit.run" added="2014-04-03T20:39:11Z" modified="2014-04-03T20:39:11Z" visited="2014-04-03T20:39:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-03T20:39:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/icons/hicolor/scalable/apps/ibus-setup.svg" added="2014-04-03T20:39:52Z" modified="2014-04-03T20:39:52Z" visited="2014-04-03T20:39:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-03T20:39:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Desktop/README" added="2014-04-03T20:41:03Z" modified="2014-04-03T22:43:31Z" visited="2014-04-03T20:41:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-03T22:43:31Z" count="12"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/start-worker.run" added="2014-04-03T20:51:51Z" modified="2014-04-03T20:51:51Z" visited="2014-04-03T20:51:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-03T20:51:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/icons/hicolor/scalable/apps/gdu-smart-healthy.svg" added="2014-04-03T20:52:09Z" modified="2014-04-04T11:50:33Z" visited="2014-04-03T20:52:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-03T20:52:09Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2014-04-04T11:50:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/stop-worker.run" added="2014-04-03T20:52:24Z" modified="2014-04-03T20:52:24Z" visited="2014-04-03T20:52:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-03T20:52:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/icons/hicolor/scalable/apps/gdu-smart-failing.svg" added="2014-04-03T20:52:49Z" modified="2014-04-04T11:51:32Z" visited="2014-04-03T20:52:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-03T20:52:49Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2014-04-04T11:51:32Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/configs/sgminer.active.conf" added="2014-04-03T22:52:06Z" modified="2014-04-03T22:52:54Z" visited="2014-04-03T22:52:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-03T22:52:54Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/gc3355-config.run" added="2014-04-04T11:43:27Z" modified="2014-04-04T11:43:27Z" visited="2014-04-04T11:43:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-04T11:43:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/icons/hicolor/scalable/apps/gdu-category-peripheral.svg" added="2014-04-04T11:43:41Z" modified="2014-04-04T11:45:04Z" visited="2014-04-04T11:43:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-04T11:45:04Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/start-gc3355.sh" added="2014-04-04T11:44:51Z" modified="2014-04-04T11:44:51Z" visited="2014-04-04T11:44:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="gnome-desktop-item-edit" exec="&apos;gnome-desktop-item-edit %u&apos;" modified="2014-04-04T11:44:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Pictures/Screenshot%20from%202014-04-04%2013%3A58%3A56.png" added="2014-04-04T11:59:04Z" modified="2014-04-04T11:59:04Z" visited="2014-04-04T11:59:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2014-04-04T11:59:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Pictures/Screenshot%20from%202014-04-04%2013%3A59%3A36.png" added="2014-04-04T11:59:39Z" modified="2014-04-04T11:59:39Z" visited="2014-04-04T11:59:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2014-04-04T11:59:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Pictures/Screenshot%20from%202014-04-04%2014%3A00%3A27.png" added="2014-04-04T12:00:30Z" modified="2014-04-04T12:00:30Z" visited="2014-04-04T12:00:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2014-04-04T12:00:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Pictures/Screenshot%20from%202014-04-04%2014%3A00%3A44.png" added="2014-04-04T12:00:46Z" modified="2014-04-04T12:00:46Z" visited="2014-04-04T12:00:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2014-04-04T12:00:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Pictures/Screenshot%20from%202014-04-04%2014%3A01%3A54.png" added="2014-04-04T12:01:56Z" modified="2014-04-04T12:01:56Z" visited="2014-04-04T12:01:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2014-04-04T12:01:56Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/crypto/Pictures/Screenshot%20from%202014-04-04%2014%3A02%3A28.png" added="2014-04-04T12:02:30Z" modified="2014-04-04T12:02:30Z" visited="2014-04-04T12:02:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2014-04-04T12:02:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

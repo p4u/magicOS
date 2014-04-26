@@ -1,0 +1,4 @@
+#!/bin/bash
+unlink /home/crypto/start_gc || rm -f /home/crypto/start_gc
+screen -x sha -X quit
+screen -x scrypt -X quit

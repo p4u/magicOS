@@ -1,0 +1,1 @@
+myriadcoin-groestl.cl-x11

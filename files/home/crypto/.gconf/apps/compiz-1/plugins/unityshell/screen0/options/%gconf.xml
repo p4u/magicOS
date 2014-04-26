@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="icon_size" mtime="1396553138" type="int" value="38"/>
+	<entry name="launcher_hide_mode" mtime="1396553138" type="int" value="0"/>
+</gconf>

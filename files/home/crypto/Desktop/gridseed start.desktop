@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=gdu-category-peripheral
+Exec=/home/crypto/start-gc3355.sh
+Name[en_US]=gridseed start
+Comment[en_US]=Start mining with gridseed 3355
+Name=GridSeed start
+Comment=Start mining with gridseed 3355
+Icon=/usr/share/icons/hicolor/scalable/apps/gdu-smart-healthy.svg

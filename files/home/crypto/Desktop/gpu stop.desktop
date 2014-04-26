@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=gdu-smart-failing
+Exec=/home/crypto/stop-worker.run
+Name[en_US]=gpu stop
+Comment[en_US]=stop and disable worker
+Name=stop
+Comment=stop and disable worker
+Icon=gdu-smart-failing

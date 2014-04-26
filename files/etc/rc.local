@@ -1,0 +1,34 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+id=$(cat /.gpuid)
+myid=$(lspci | grep VGA | md5sum | awk '{print $1}')
+[ "$id" != "$myid" ] && {
+	/bin/rw
+	chown root.root /root -R
+	chown crypto.crypto /home/crypto -R
+	chown www-data.www-data /var/www -R
+	chmod 777 /usr/local/bin -R
+
+	[ ! -f /etc/ssh/ssh_host_dsa_key ] && ssh-keygen -t dsa -N "" -f /etc/ssh/ssh_host_dsa_key
+	[ ! -f /etc/ssh/ssh_host_rsa_key ] && ssh-keygen -t rsa -N "" -f /etc/ssh/ssh_host_rsa_key &
+	[ ! -f /etc/ssh/ssh_host_ecdsa_key ] && ssh-keygen -t ecdsa -N "" -f /etc/ssh/ssh_host_ecdsa_key &
+	
+	echo "$myid" > /.gpuid
+	[ "$?" -eq 0 ] && { 
+		rm -f /etc/X11/xorg.conf
+		aticonfig --initial --adapter=all
+		shutdown -r now 
+	} || /bin/ro
+}
+

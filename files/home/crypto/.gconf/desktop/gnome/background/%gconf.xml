@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="picture_filename" mtime="1396553153" type="string">
+		<stringvalue>file:///usr/share/backgrounds/contest/precise.xml</stringvalue>
+	</entry>
+</gconf>

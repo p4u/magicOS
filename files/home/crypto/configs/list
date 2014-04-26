@@ -1,0 +1,4 @@
+sgminer.generic.conf: generic
+sgminer.280x.conf: 7750/280x
+sgminer.290x.conf: 290x
+sgminer.69xx.conf: 6950/69XX

@@ -1,0 +1,10 @@
+#!/bin/bash
+HOST="$1"
+[ -z "$HOST" ] && HOST="magicminer"
+mount /rom -o remount,rw
+[ $? -ne 0 ] && { echo "Cannot write hostname"; exit 1; }
+echo "$HOST" > /rom/etc/hostname
+echo "$HOST" > /proc/sys/kernel/hostname
+sed  -i s/^127.0.0.1.*$/"127.0.0.1 localhost $HOST"/g /rom/etc/hosts
+sed  -i s/^127.0.0.1.*$/"127.0.0.1 localhost $HOST"/g /etc/hosts
+mount /rom -o remount,ro

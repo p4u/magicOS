@@ -1,0 +1,37 @@
+{
+    "api-allow": "W:127.0.0.1,R:10.0.0.0/8",
+    "api-listen": true,
+    "api-mcast": true,
+    "api-mcast-port": "4028",
+    "api-network": true,
+    "api-port": "4028",
+    "expiry": "120",
+    "gpu-dyninterval": "7",
+    "gpu-engine": "940",
+    "gpu-memclock": "1410",
+    "gpu-powertune": "20",
+    "gpu-threads": "1",
+    "intensity": "16",
+    "kernel": "psw",
+    "log": "5",
+    "lookup-gap": "2",
+    "no-pool-disable": true,
+    "pools": [
+        {
+            "pass": "x",
+            "url": "stratum+tcp://magicpool.org:3333",
+            "user": "mpool.sm1"
+        }
+    ],
+    "worksize": "256",
+    "queue": "0",
+    "scan-time": "30",
+    "scrypt": true,
+    "auto-fan" : true,
+    "gpu-fan": "20-100",
+    "temp-cutoff": "95",
+    "temp-hysteresis": "3",
+    "temp-overheat": "90",
+    "temp-target": "75",
+    "thread-concurrency": "32750"
+}

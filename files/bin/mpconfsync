@@ -1,0 +1,14 @@
+#!/bin/bash
+mount /rom -o remount,rw
+cp -f /tmp/magicpool.conf /etc/magicpool.conf 2>/dev/null
+cp -f /tmp/magicpool.conf /rom/etc/magicpool.conf
+[ -f /tmp/magicpool.password ] && {
+	cp -f /tmp/magicpool.password /etc/magicpool.password
+	cp -f /tmp/magicpool.password /rom/etc/magicpool.password
+}
+cat /var/spool/cron/crontabs/crypto | grep -v mp-agent.py > /tmp/crypto.cron
+echo "*/5 * * * * python2 /home/crypto/mp-agent.py 2>&1 1>/tmp/mp-agent.log" >> /tmp/crypto.cron
+sudo cp -f /tmp/crypto.cron /var/spool/cron/crontabs/crypto
+sudo cp -f /tmp/crypto.cron /rom/var/spool/cron/crontabs/crypto
+sleep 1
+mount /rom -o remount,ro

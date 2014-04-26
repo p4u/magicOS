@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=firefox
+Name[en_US]=magicpool agent
+Exec=firefox localhost/configure.cgi
+Comment[en_US]=magicpool agent configurator
+Name=magicpool agent
+Comment=magicpool agent configurator
+Icon=/usr/share/icons/hicolor/scalable/apps/gwibber.svg

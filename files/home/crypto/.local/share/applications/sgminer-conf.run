@@ -1,0 +1,3 @@
+#!/bin/bash
+gedit /home/crypto/.sgminer/sgminer.conf
+homesync

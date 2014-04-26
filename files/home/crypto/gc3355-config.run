@@ -1,0 +1,32 @@
+#!/bin/bash
+
+config="/home/crypto/configs/gc3355"
+
+touch $config || exit 2
+
+echo "Pool configuration for SHA256 (BitCoin). Leave blank to mine only scrypt."
+read -p "Pool url (i.e stratum+tcp://uk1.ghash.io:3333): " pool
+read -p "Worker username: " user
+read -p "Worker password: " pass
+
+sha="sha|$pool|$user|$pass"
+echo
+echo "Pool configuration for scrypt (LiteCoin/AltCoin)"
+read -p "Pool url (i.e stratum+tcp://magicpool.org:3333): " pool
+read -p "Worker username: " user
+read -p "Worker password: " pass
+
+scrypt="scrypt|$pool|$user|$pass"
+
+echo 
+echo "The following configuration file will be created."
+echo -e "$sha\n$scrypt"
+echo "Press any key to confirm"
+read
+echo
+echo "Now you can start (or restart) the gc3355 miner process!"
+
+echo "$sha" > $config
+echo "$scrypt" >> $config
+
+

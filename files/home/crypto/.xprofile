@@ -1,0 +1,7 @@
+export GPU_USE_SYNC_OBJECTS=1
+export GPU_MAX_ALLOC_PERCENT=100
+(sleep 15 && /home/crypto/start) &
+(sleep 10 && /home/crypto/start_gc) &
+#(sleep 15; xterm -e 'screen -S mpool -m run-miner') &
+date > /tmp/xstarted
+setxkbmap -layout 'us,us' -model pc105

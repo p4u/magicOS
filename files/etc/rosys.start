@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+rm /etc/udev/rules.d/70-persistent-net.rules
+#rm -f /etc/X11/xorg.conf
+#aticonfig --initial --adapter=all
+rm -f /home/crypto/*.bin
+
