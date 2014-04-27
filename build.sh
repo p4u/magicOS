@@ -50,7 +50,7 @@ mount_root() {
 
 copy_root_files() {
 	echo "Copying files from $BUILD to $MNT"
-	cp -a $BUILD/* $MNT/
+	sudo cp -a $BUILD/* $MNT/
 }
 
 build_final_img() {
@@ -67,11 +67,13 @@ clean() {
 }
 
 print_help() {
-	echo "Available commands:"
+	echo "[MagiOS creator]"
+	echo "  Available commands:"
 	echo -e "\tprepare\t\tprepare the environment, create partitions and mount root partition"
 	echo -e "\tsyncbuild\tcopy root partition files from $BUILD and generate final image"
 	echo -e "\tclean\t\tclean temporay files and umount root partition"
 	echo -e "\tall\t\tdo prepare and syncbuild"
+	echo -e "\n  You may be asked for your password due a sudo command execution"
 }
 
 [ "$1" == "prepare" ] && prepare && build_img_partitions && mount_root
