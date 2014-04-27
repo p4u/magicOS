@@ -56,22 +56,28 @@ copy_root_files() {
 build_final_img() {
 	echo "Creating final image"
 	cat $MBR ${IMG_OUTPUT}.root ${IMG_OUTPUT}.offset ${IMG_OUTPUT}.swap > ${IMG_OUTPUT}
-	rm -f ${IMG_OUTPUT}.root ${IMG_OUTPUT}.swap ${IMG_OUTPUT}.offset
 	parted -s ${IMG_OUTPUT} mklabel msdos
 	parted -s ${IMG_OUTPUT} unit MiB mkpart primary ext3 1 $(($ROOT_SIZE+$OFFSET))
 	parted -s ${IMG_OUTPUT} unit MiB mkpart primary linux-swap $(($ROOT_SIZE+$OFFSET)) $(($ROOT_SIZE+$OFFSET+${SWAP_SIZE}))
+}
+
+clean() {
+	sudo umount $MNT
+	rm -f ${IMG_OUTPUT}.root ${IMG_OUTPUT}.swap ${IMG_OUTPUT}.offset
 }
 
 print_help() {
 	echo "Available commands:"
 	echo -e "\tprepare\t\tprepare the environment, create partitions and mount root partition"
 	echo -e "\tsyncbuild\tcopy root partition files from $BUILD and generate final image"
+	echo -e "\tclean\t\tclean temporay files and umount root partition"
 	echo -e "\tall\t\tdo prepare and syncbuild"
 }
 
 [ "$1" == "prepare" ] && prepare && build_img_partitions && mount_root
 [ "$1" == "syncbuild" ] && copy_root_files && build_final_img
-[ "$1" == "all" ] && prepare && build_img_partitions && mount_root && copy_root_files && build_final_img
+[ "$1" == "clean" ] && clean
+[ "$1" == "all" ] && prepare && build_img_partitions && mount_root && copy_root_files && build_final_img && clean
 [ -z "$1" ] && print_help
 
 
