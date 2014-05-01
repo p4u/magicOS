@@ -44,7 +44,7 @@ build_img_partitions() {
 
 mount_root() {
 	echo "Mounting root image to $MNT"
-	sudo mount magicOS.img.root $MNT -o loop
+	sudo mount magicOS.img.root $MNT -o loop,rw
 	[ $? -ne 0 ] && error "Cannot mount root partition to $MNT!"
 }
 
