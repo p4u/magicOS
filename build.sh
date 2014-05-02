@@ -1,4 +1,5 @@
-#¡/bin/bash
+#!/bin/bash
+
 FS="magicOSfiles.tar.gz"
 FILES="files"
 BUILD="build"
