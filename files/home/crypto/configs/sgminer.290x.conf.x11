@@ -7,12 +7,12 @@
     "api-port": "4028",
     "expiry": "120",
     "gpu-dyninterval": "7",
-    "gpu-engine": "940",
+    "gpu-engine": "947",
     "gpu-fan": "100-100",
-    "gpu-memclock": "1400",
+    "gpu-memclock": "1250",
     "gpu-powertune": "20",
     "gpu-threads": "2",
-    "intensity": "13",
+    "intensity": "19",
     "kernel": "darkcoin",
     "log": "5",
     "lookup-gap": "2",
@@ -31,5 +31,5 @@
     "temp-hysteresis": "3",
     "temp-overheat": "90",
     "temp-target": "75",
-    "thread-concurrency": "8192"
+    "thread-concurrency": "32750"
 }
