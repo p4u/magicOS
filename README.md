@@ -9,7 +9,7 @@ You must download the file magicOSfiles.tar.gz
 
 NOTE: You may be asked for a sudo password during the building process
 
-wget -c http://magicpool.org/downloads/magicOSfiles.tar.gz
+wget -c https://magicpool.org/downloads/magicOSfiles.tar.gz
 ./build.sh all
 sudo dd if=magicOS.img of=/dev/sdX
 sudo sync
